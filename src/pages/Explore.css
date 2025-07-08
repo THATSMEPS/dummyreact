@@ -1,0 +1,12 @@
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+.explore-img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
