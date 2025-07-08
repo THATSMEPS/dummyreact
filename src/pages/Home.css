@@ -1,26 +1,59 @@
 .feed {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  max-width: 400px;
+  gap: 2.5rem;
+  max-width: 470px;
   margin: 2rem auto;
 }
 .post {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   overflow: hidden;
+  border: 1px solid #dbdbdb;
 }
 .post-header {
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem;
   border-bottom: 1px solid #eee;
+}
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #dbdbdb;
+}
+.post-username {
+  font-weight: 600;
+  color: #262626;
+  margin-right: 0.5rem;
+}
+.post-time {
+  font-size: 0.85rem;
+  color: #8e8e8e;
 }
 .post-image {
   width: 100%;
   display: block;
+  max-height: 470px;
+  object-fit: cover;
+  background: #eee;
+}
+.post-actions {
+  padding: 0.7rem 1rem 0.2rem 1rem;
+  font-size: 1.2rem;
 }
 .post-caption {
-  padding: 1rem;
+  padding: 0 1rem 0.5rem 1rem;
   font-size: 1rem;
+  text-align: left;
+}
+.post-comments {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 0.97rem;
+  color: #262626;
+  text-align: left;
 }
